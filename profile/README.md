@@ -3,9 +3,9 @@ Projeto LIBRA
 
 ***Sistema Interativo de Coleta, Anotação e Detecção Automática de Fake News***
 
-1. [Motivação](motivação)
+1. [Motivação](#motivação)
 
-Motivação
+[Motivação](#motivação)
 ---------
 
 A internet trouxe mudanças irreversíveis na forma de se comunicar, de se informar e de interagir com o mundo. Inevitavelmente, várias instâncias do nosso contexto político também se transferiram para o digital. As eleições presidenciais de 2018 e 2022 foram grandes exemplos de como as fake news são usadas como estratégia de campanhas políticas e interferem e processos democráticos. 
