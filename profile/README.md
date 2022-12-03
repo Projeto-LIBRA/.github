@@ -24,4 +24,4 @@ Tendo esses dois objetivos em mente, foram utilizadas técnicas de desenvolvimen
 
 Arquitetura
 -----------
-![Fluxograma]([profile/5.2 Fluxograma.png](https://github.com/Projeto-LIBRA/.github/blob/42f7d4ba91b93edcbcdce723a003b4d62145fd11/profile/5.2%20Fluxograma.png))
+![Fluxograma](https://github.com/Projeto-LIBRA/.github/blob/42f7d4ba91b93edcbcdce723a003b4d62145fd11/profile/5.2%20Fluxograma.png)
