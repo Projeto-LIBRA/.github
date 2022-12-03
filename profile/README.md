@@ -25,4 +25,4 @@ Tendo esses dois objetivos em mente, foram utilizadas técnicas de desenvolvimen
 Arquitetura
 -----------
 
-![Fluxograma](5.2 Fluxograma)
+![Fluxograma](/5.2 Fluxograma.png)
