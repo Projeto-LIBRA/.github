@@ -38,3 +38,10 @@ O processo de execução pode ser descrito da seguinte forma:
 1. Uma instância da AWS Lambda, unidade de serviço de computação serverless contendo programa responsável pela coleta de dados, é acionada com o envio da mensagem anterior para a fila. Essa unidade faz o processo completo de extração, processamento e armazenamento dos dados do tweet no Amazon S3.
 
 1. Após o armazenamento ser realizado, é enviada uma mensagem contendo as mesmas duas chaves identificadoras que iniciaram o fluxo para uma segunda fila do Amazon SQS. Essa mensagem aciona uma outra instância de Lambda, responsável por toda a parte final do fluxo, que inclui execução do modelo dEFEND, resposta à marcação no Twitter e armazenamento dos resultados da execução no Amazon S3.
+
+O projeto na prática
+--------------------
+
+Os resultados do trabalho podem ser vistos na prática marcando o [perfil do bot no Twitter](https://twitter.com/ProjetoLibra) e acessando o [dataset público](https://github.com/Projeto-LIBRA).
+
+
