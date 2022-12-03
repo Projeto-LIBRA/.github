@@ -3,6 +3,8 @@ Projeto LIBRA
 
 ***Sistema Interativo de Coleta, Anotação e Detecção Automática de Fake News***
 
+1. [Motivação](motivação)
+
 Motivação
 ---------
 
