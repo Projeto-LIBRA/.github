@@ -44,4 +44,4 @@ O projeto na prática
 
 Os resultados do trabalho podem ser vistos na prática marcando o [perfil do bot no Twitter](https://twitter.com/ProjetoLibra) e acessando o [dataset público](https://github.com/Projeto-LIBRA).
 
-
+![funcionamento](./funcionamento.png)
