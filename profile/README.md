@@ -4,9 +4,12 @@ Projeto LIBRA
 ***Sistema Interativo de Coleta, Anotação e Detecção Automática de Fake News***
 
 1. [Motivação](#motivação)
+1. [Objetivo](#objetivo)
+1. [Arquitetura](#arquitetura)
+1. [O projeto na prática](#o-projeto-na-prática)
 
 [Motivação](#motivação)
----------
+-----------------------
 
 A internet trouxe mudanças irreversíveis na forma de se comunicar, de se informar e de interagir com o mundo. Inevitavelmente, várias instâncias do nosso contexto político também se transferiram para o digital. As eleições presidenciais de 2018 e 2022 foram grandes exemplos de como as fake news são usadas como estratégia de campanhas políticas e interferem e processos democráticos. 
 
@@ -14,8 +17,8 @@ No meio acadêmico, a detecção automática de desinformações já se configur
 
 As técnicas modernas de processamento de linguagem natural ainda enfrentam um grande desafio: na mesma medida em que necessitam de muitos dados para treinamento, há pouca diversidade de datasets anotados para seu desenvolvimento, principalmente em domínios mais restritos, como o tratado neste trabalho, e em idiomas diferentes do inglês. No geral, essas bases necessitam de uma etapa de anotação manual humana, que torna o processo pouco escalável e atrasa o desenvolvimento de algoritmos mais robustos em nível nacional.
 
-Objetivo
---------
+[Objetivo](#objetivo)
+---------------------
 
 O objetivo deste trabalho é criar um sistema que auxilie no combate à disseminação de fake news em redes sociais, desenvolvido em conjunto com o grupo interdisciplinar de pesquisa IBRA USP. Esse objetivo se divide em duas frentes complementares:
 
@@ -24,8 +27,8 @@ O objetivo deste trabalho é criar um sistema que auxilie no combate à dissemin
 
 Tendo esses dois objetivos em mente, foram utilizadas técnicas de desenvolvimento e implementação (deploy) de algoritmos de Aprendizado de Máquina (mais especificamente processamento de linguagem natural e deep learning) e tecnologias ligadas a coleta, processamento, armazenamento e visualização de dados. Ademais, haverá emprego de técnicas e conceitos de engenharia de software para estruturar a arquitetura necessária para o funcionamento dos diversos módulos do sistema.
 
-Arquitetura
------------
+[Arquitetura](#arquitetura)
+---------------------------
 
 A arquitetura do sistema é baseada em serviços da AWS, com uso de endpoints da API do Twitter para interação com o usuário e coleta de dados.
 
@@ -41,8 +44,8 @@ O processo de execução pode ser descrito da seguinte forma:
 
 1. Após o armazenamento ser realizado, é enviada uma mensagem contendo as mesmas duas chaves identificadoras que iniciaram o fluxo para uma segunda fila do Amazon SQS. Essa mensagem aciona uma outra instância de Lambda, com o [código responsável por toda a parte final do fluxo, que inclui execução do modelo dEFEND, resposta à marcação no Twitter e armazenamento dos resultados da execução no Amazon S3](https://github.com/Projeto-LIBRA/defend-model).
 
-O projeto na prática
---------------------
+[O projeto na prática](#o-projeto-na-prática)
+--------------------------------
 
 Os resultados do trabalho podem ser vistos na prática marcando o [perfil do bot no Twitter](https://twitter.com/ProjetoLibra) e acessando o [dataset público](https://github.com/Projeto-LIBRA).
 
