@@ -11,7 +11,7 @@ Projeto LIBRA
 Motivação
 ---------
 
-A internet trouxe mudanças irreversíveis na forma de se comunicar, de se informar e de interagir com o mundo. Inevitavelmente, várias instâncias do nosso contexto político também se transferiram para o digital. As eleições presidenciais de 2018 e 2022 foram grandes exemplos de como as fake news são usadas como estratégia de campanhas políticas e interferem e processos democráticos. 
+A internet trouxe mudanças irreversíveis na forma de se comunicar, de se informar e de interagir com o mundo. Inevitavelmente, várias instâncias do nosso contexto político também se transferiram para o digital. As eleições presidenciais de 2018 e 2022 foram grandes exemplos de como as fake news são usadas como estratégia de campanhas políticas e interferem em processos democráticos. 
 
 No meio acadêmico, a detecção automática de desinformações já se configura como uma área emergente de grande interesse. Porém, ainda não é comum, principalmente no Brasil, encontrar projetos que buscam implementar esse conhecimento, isto é, que propõem soluções para trazer benefícios mais próximos do grande público.
 
