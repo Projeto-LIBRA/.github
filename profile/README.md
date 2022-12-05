@@ -47,6 +47,6 @@ O processo de execução pode ser descrito da seguinte forma:
 O projeto na prática
 --------------------
 
-Os resultados do trabalho podem ser vistos na prática marcando o [perfil do bot no Twitter](https://twitter.com/ProjetoLibra) e acessando o [dataset público](https://github.com/Projeto-LIBRA).
+Os resultados do trabalho podem ser vistos na prática marcando o [perfil do bot no Twitter](https://twitter.com/ProjetoLibra) e acessando o [dataset público](https://github.com/Projeto-LIBRA/libra-dataset).
 
 ![funcionamento](https://github.com/Projeto-LIBRA/.github/blob/4f6d6f281876ccf2e0e58fc4d3334c5cd01a14bb/profile/funcionamento.png)
