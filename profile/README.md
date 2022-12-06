@@ -39,7 +39,7 @@ O processo de execução pode ser descrito da seguinte forma:
 
 1. O fluxo começa quando o o usuário comenta um tweet, marcando o perfil do bot. A marcação age como trigger, isto é, o gatilho para início da execução do fluxo do sistema.
     
-1. Um computador virtual (Amazon EC2) que executa continuamente o [script que implementa o endpoint Filtered Stream da API do Twitter](https://github.com/Projeto-LIBRA/twitter-tag-stream), recebendo em tempo real objetos que representam eventos de marcação. Esses objetos possuem as chaves identificadoras da postagem original e da marcação. Após recebê-lo, a EC2 envia uma mensagem para uma fila do Amazon SQS, com os parâmetros necessários.
+1. Um computador virtual (Amazon EC2) que executa continuamente o [script que implementa o endpoint Filtered Stream da API do Twitter](#twitter-tag-stream), recebendo em tempo real objetos que representam eventos de marcação. Esses objetos possuem as chaves identificadoras da postagem original e da marcação. Após recebê-lo, a EC2 envia uma mensagem para uma fila do Amazon SQS, com os parâmetros necessários.
     
 1. Uma instância da AWS Lambda, unidade de serviço de computação serverless contendo programa responsável pela coleta de dados, é acionada com o envio da mensagem anterior para a fila. Essa unidade executa um [código que faz o processo completo de extração, processamento e armazenamento dos dados do tweet no Amazon S3](https://github.com/Projeto-LIBRA/tweet-collector).
 
