@@ -41,17 +41,34 @@ O processo de execução pode ser descrito da seguinte forma:
     
 1. Um computador virtual (Amazon EC2) que executa continuamente o [script que implementa o endpoint Filtered Stream da API do Twitter](#twitter-tag-stream), recebendo em tempo real objetos que representam eventos de marcação. Esses objetos possuem as chaves identificadoras da postagem original e da marcação. Após recebê-lo, a EC2 envia uma mensagem para uma fila do Amazon SQS, com os parâmetros necessários.
     
-1. Uma instância da AWS Lambda, unidade de serviço de computação serverless contendo programa responsável pela coleta de dados, é acionada com o envio da mensagem anterior para a fila. Essa unidade executa um [código que faz o processo completo de extração, processamento e armazenamento dos dados do tweet no Amazon S3](https://github.com/Projeto-LIBRA/tweet-collector).
+1. Uma instância da AWS Lambda, unidade de serviço de computação serverless contendo programa responsável pela coleta de dados, é acionada com o envio da mensagem anterior para a fila. Essa unidade executa um [código que faz o processo completo de extração, processamento e armazenamento dos dados do tweet no Amazon S3](#tweet-collector).
 
-1. Após o armazenamento ser realizado, é enviada uma mensagem contendo as mesmas duas chaves identificadoras que iniciaram o fluxo para uma segunda fila do Amazon SQS. Essa mensagem aciona uma outra instância de Lambda, com o [código responsável por toda a parte final do fluxo, que inclui execução do modelo dEFEND, resposta à marcação no Twitter e armazenamento dos resultados da execução no Amazon S3](https://github.com/Projeto-LIBRA/defend-model).
+1. Após o armazenamento ser realizado, é enviada uma mensagem contendo as mesmas duas chaves identificadoras que iniciaram o fluxo para uma segunda fila do Amazon SQS. Essa mensagem aciona uma outra instância de Lambda, com o [código responsável por toda a parte final do fluxo, que inclui execução do modelo dEFEND, resposta à marcação no Twitter e armazenamento dos resultados da execução no Amazon S3](#defend-model).
 
 Repositórios do projeto
 -----------------------
-
-- [twitter-tag-stream](https://github.com/Projeto-LIBRA/twitter-tag-stream)
-- [tweet-collector](https://github.com/Projeto-LIBRA/tweet-collector)
-- [defend-model](https://github.com/Projeto-LIBRA/defend-model)
-- [libra-dataset](https://github.com/Projeto-LIBRA/libra-dataset)
+<ul>
+    <li>
+        <a name="twitter-tag-stream">
+            [twitter-tag-stream](https://github.com/Projeto-LIBRA/twitter-tag-stream)
+        </a>
+    </li>
+    <li>
+        <a name="tweet-collector">
+            [tweet-collector](https://github.com/Projeto-LIBRA/tweet-collector)
+        </a>
+    </li>
+    <li>
+        <a name="defend-model">
+            [defend-model](https://github.com/Projeto-LIBRA/defend-model)
+        </a>
+    </li>
+    <li>
+        <a name="libra-dataset">
+            [libra-dataset](https://github.com/Projeto-LIBRA/libra-dataset)
+        </a>
+    </li>
+</ul>
 
 O projeto na prática
 --------------------
