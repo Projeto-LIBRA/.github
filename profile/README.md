@@ -6,8 +6,8 @@ Projeto LIBRA
 1. [Motivação](#motivação)
 1. [Objetivo](#objetivo)
 1. [Arquitetura](#arquitetura)
-1. [Repositórios do projeto](#repositórios-do-projeto)
 1. [O projeto na prática](#o-projeto-na-prática)
+1. [Repositórios do projeto](#repositórios-do-projeto)
 
 Motivação
 ---------
