@@ -59,5 +59,4 @@ Para saber mais sobre algum dos componentes do projeto, acesse os repositórios 
 - [twitter-tag-stream](https://github.com/Projeto-LIBRA/twitter-tag-stream): script executado no segundo passo descrito na [arquitetura](#arquitetura).
 - [tweet-collector](https://github.com/Projeto-LIBRA/tweet-collector): script executado para coleta e armazenamento de dados.
 - [defend-model](https://github.com/Projeto-LIBRA/defend-model): modelo de aprendizado de máquina utilizado no projeto.
-- [libra-dataset](https://github.com/Projeto-LIBRA/libra-dataset): dataset com resultados da execução do sistema.
-- 
+- [libra-dataset](https://github.com/Projeto-LIBRA/libra-dataset): dataset com resultados da execução do sistema. 
