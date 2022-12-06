@@ -45,17 +45,19 @@ O processo de execução pode ser descrito da seguinte forma:
 
 1. Após o armazenamento ser realizado, é enviada uma mensagem contendo as mesmas duas chaves identificadoras que iniciaram o fluxo para uma segunda fila do Amazon SQS. Essa mensagem aciona uma outra instância de Lambda, com o [código responsável por toda a parte final do fluxo, que inclui execução do modelo dEFEND, resposta à marcação no Twitter e armazenamento dos resultados da execução no Amazon S3](https://github.com/Projeto-LIBRA/defend-model).
 
-Repositórios do projeto
------------------------
-
-- [twitter-tag-stream](https://github.com/Projeto-LIBRA/twitter-tag-stream): script executado no segundo passo descrito na [arquitetura](#arquitetura).
-- [tweet-collector](https://github.com/Projeto-LIBRA/tweet-collector): script executado para coleta e armazenamento de dados.
-- [defend-model](https://github.com/Projeto-LIBRA/defend-model): modelo de aprendizado de máquina utilizado no projeto.
-- [libra-dataset](https://github.com/Projeto-LIBRA/libra-dataset): dataset com resultados da execução do sistema.
-
 O projeto na prática
 --------------------
 
 Os resultados do trabalho podem ser vistos na prática marcando o [perfil do bot no Twitter](https://twitter.com/ProjetoLibra) e acessando o [dataset público](https://github.com/Projeto-LIBRA/libra-dataset).
 
 ![funcionamento](https://github.com/Projeto-LIBRA/.github/blob/4f6d6f281876ccf2e0e58fc4d3334c5cd01a14bb/profile/funcionamento.png)
+
+Repositórios do projeto
+-----------------------
+
+Para saber mais sobre algum dos componentes do projeto, acesse os repositórios através dos links abaixo.
+- [twitter-tag-stream](https://github.com/Projeto-LIBRA/twitter-tag-stream): script executado no segundo passo descrito na [arquitetura](#arquitetura).
+- [tweet-collector](https://github.com/Projeto-LIBRA/tweet-collector): script executado para coleta e armazenamento de dados.
+- [defend-model](https://github.com/Projeto-LIBRA/defend-model): modelo de aprendizado de máquina utilizado no projeto.
+- [libra-dataset](https://github.com/Projeto-LIBRA/libra-dataset): dataset com resultados da execução do sistema.
+- 
