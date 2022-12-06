@@ -6,6 +6,7 @@ Projeto LIBRA
 1. [Motivação](#motivação)
 1. [Objetivo](#objetivo)
 1. [Arquitetura](#arquitetura)
+1. [Repositórios do projeto](#repositórios-do-projeto)
 1. [O projeto na prática](#o-projeto-na-prática)
 
 Motivação
@@ -43,6 +44,14 @@ O processo de execução pode ser descrito da seguinte forma:
 1. Uma instância da AWS Lambda, unidade de serviço de computação serverless contendo programa responsável pela coleta de dados, é acionada com o envio da mensagem anterior para a fila. Essa unidade executa um [código que faz o processo completo de extração, processamento e armazenamento dos dados do tweet no Amazon S3](https://github.com/Projeto-LIBRA/tweet-collector).
 
 1. Após o armazenamento ser realizado, é enviada uma mensagem contendo as mesmas duas chaves identificadoras que iniciaram o fluxo para uma segunda fila do Amazon SQS. Essa mensagem aciona uma outra instância de Lambda, com o [código responsável por toda a parte final do fluxo, que inclui execução do modelo dEFEND, resposta à marcação no Twitter e armazenamento dos resultados da execução no Amazon S3](https://github.com/Projeto-LIBRA/defend-model).
+
+Repositórios do projeto
+-----------------------
+
+- [twitter-tag-stream](https://github.com/Projeto-LIBRA/twitter-tag-stream)
+- [tweet-collector](https://github.com/Projeto-LIBRA/tweet-collector)
+- [defend-model](https://github.com/Projeto-LIBRA/defend-model)
+- [libra-dataset](https://github.com/Projeto-LIBRA/libra-dataset)
 
 O projeto na prática
 --------------------
