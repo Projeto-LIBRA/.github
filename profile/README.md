@@ -48,10 +48,10 @@ O processo de execução pode ser descrito da seguinte forma:
 Repositórios do projeto
 -----------------------
 
-- [twitter-tag-stream](https://github.com/Projeto-LIBRA/twitter-tag-stream) 
-- [tweet-collector](https://github.com/Projeto-LIBRA/tweet-collector)
-- [defend-model](https://github.com/Projeto-LIBRA/defend-model)
-- [libra-dataset](https://github.com/Projeto-LIBRA/libra-dataset)
+- [twitter-tag-stream](https://github.com/Projeto-LIBRA/twitter-tag-stream): script executado no segundo passo descrito na [arquitetura](#arquitetura).
+- [tweet-collector](https://github.com/Projeto-LIBRA/tweet-collector): script executado para coleta e armazenamento de dados.
+- [defend-model](https://github.com/Projeto-LIBRA/defend-model): modelo de aprendizado de máquina utilizado no projeto.
+- [libra-dataset](https://github.com/Projeto-LIBRA/libra-dataset): dataset com resultados da execução do sistema.
 
 O projeto na prática
 --------------------
